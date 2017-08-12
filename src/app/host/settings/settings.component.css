@@ -1,0 +1,24 @@
+.mainbody {
+  background: #fff;
+  padding:40px;
+  margin: 50px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  text-align: left;
+}
+.mytitle{
+  background-image: url("./assets/img/home_img/title3.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  text-align: left;
+  padding-left: 90px;
+  padding-top: 1px;
+  font-size: x-large;
+  font-weight: bolder;
+  text-shadow: 1px 0px 2px #888888;
+  margin: 15px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,27 @@
+
+<div style="height: 80px;"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="titles span2  col-xs-12 col-sm-3 col-md-2 rightList" id="rightList">
+      <ul class="nav nav-stacked">
+        <li class="title">我的主页</li>
+        <!--<li class="SubTitle"><a class="SubTitleText" routerLink="firstpage">我的账户</a></li>-->
+        <li class="SubTitle puretitle">我的账户</li>
+
+        <li class="SubTitle smaller"><a class="SubTitleText" routerLink="firstpage">账户首页</a></li>
+        <li class="SubTitle smaller"><a class="SubTitleText" routerLink="settings">账户设置</a></li>
+
+        <!--<li class="SubTitle" style="margin-top: 15px;"><a class="SubTitleText" routerLink="warehouse">我的资产</a></li>-->
+        <li class="SubTitle puretitle" style="margin-top: 15px;">我的资产</li>
+
+        <li class="SubTitle smaller"><a class="SubTitleText" routerLink="warehouse">我的持仓</a></li>
+        <li class="SubTitle smaller"><a class="SubTitleText" routerLink="searchlogs">交易查询</a></li>
+
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-10" >
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>

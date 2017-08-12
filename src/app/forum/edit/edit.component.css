@@ -1,0 +1,26 @@
+ button{
+  float: right;
+  font-size: 14px;
+  color: #fff;
+  background: #00b4ef;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+   margin:20px;
+}
+ .mytitle{
+   background-image: url("./assets/img/home_img/title3.png");
+   background-repeat: no-repeat;
+   height: 60px;
+   text-align: left;
+   padding-left: 90px;
+   padding-top: 1px;
+   font-size: x-large;
+   font-weight: bolder;
+   text-shadow: 1px 0px 2px #888888;
+   margin: 15px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+ }

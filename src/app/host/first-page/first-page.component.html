@@ -1,0 +1,81 @@
+<div class="mytitle">账户首页</div>
+
+<button class="btn btn-info" (click)="identified =! identified">
+</button>
+<div class="panel panel-primary wrap" *ngIf= "identified" >
+  <div class="panel-heading">总资产</div>
+  <div class="panel-body">
+    <div style="float: left; width:200px" class = "right">
+      <div class="mytext">
+      0.00元
+      </div>
+    </div>
+    <div style="float: left; width:200px" class = "lr">
+      <div class="mytext">
+      基金产品
+      </div>
+    </div>
+    <div style="float: left; width:500px" class = "left">
+      <div class="mytext">
+        储蓄罐
+      </div>
+      <button class = "btn btn-danger" style="margin-top:20px">立即存钱
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-primary wrap" *ngIf= "!identified">
+  <div class="panel-heading">总资产</div>
+  <div class="panel-body">
+    <div style="float: left;width: 400px" class="right">
+      <div class="mytext">
+        实名认证
+      </div>
+      <button class = "btn btn-info" style="margin-top:20px" routerLink="/identify">立即认证
+      </button>
+    </div>
+    <div style="float: left;width:400px" class="left">
+      <div class="mytext">
+        储蓄罐
+      </div>
+      <button class = "btn btn-danger" style="margin-top:20px">立即存钱
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-primary wrap">
+  <div class="panel-heading">我的持仓(现在持有基金 0 支)</div>
+  <div class="panel-body">
+    <div style="margin-top: 30px; margin-bottom: 30px">
+      <a style="font-size: 20px;font-weight: 800" routerLink="/fund">
+      —选购基金—
+    </a>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-primary wrap">
+  <div class="panel-heading">我的收藏</div>
+  <div class="panel-body">
+    <div class="list-group">
+      <a class="list-group-item" routerLink="/fund/fundDetails">
+        <h4 class="list-group-item-heading">大资管 2.0 时代到来 公募 FOF 成未来创新中坚力量</h4>
+        <p class="list-group-item-text">2017-07-28</p>
+      </a>
+      <a class="list-group-item" routerLink="/fund/fundDetails">
+        <h4 class="list-group-item-heading">公募 FOF"双重收费":事实是个"伪命题" 投资者不必担忧</h4>
+        <p class="list-group-item-text">2017-07-27</p>
+      </a>
+      <a class="list-group-item" routerLink="/fund/fundDetails">
+        <h4 class="list-group-item-heading">FOF 渐行渐近 下半年公募市场迎机遇</h4>
+        <p class="list-group-item-text">2017-08-01</p>
+      </a>
+      <a  class="list-group-item" routerLink="/fund/fundDetails">
+        <h4 class="list-group-item-heading">成功投资 FOF 五要素</h4>
+        <p class="list-group-item-text">2017-08-06</p>
+      </a>
+    </div>
+  </div>
+</div>

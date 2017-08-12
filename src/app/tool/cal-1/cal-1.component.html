@@ -1,0 +1,29 @@
+
+<div class="title">适用于计算认/申购基金的手续费和成交份额。</div>
+
+<div style="padding: 0px;">
+  <form class="bs-example bs-example-form" role="form">
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="认/申购金额" (input)="cal1($event.target.value)">
+      <span class="input-group-addon">元</span>
+    </div>
+    <br>
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="单位净值"  (input)="cal2($event.target.value)">
+      <span class="input-group-addon">元</span>
+    </div>
+    <br>
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="认/申购费率" (input)="cal3($event.target.value)">
+      <span class="input-group-addon">%</span>
+    </div>
+  </form>
+</div>
+<div style="width: 300px;
+margin-left: 100px;
+margin-top: 20px;"><button class="btn btn-danger" style="width:300px;text-align: center" (click)="cal()">计算</button></div>
+<div class="title">计算结果</div>
+<div style="margin-bottom: 20px">
+<div class="result">认/申购手续费:{{ result1}}元</div>
+<div class="result">认/申购成交份额:{{ result2}}份</div>
+</div>

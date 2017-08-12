@@ -1,0 +1,144 @@
+<nav class="navbar navbar-inverse navbar-fixed-top opacity8">
+  <div class="container">
+    <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a routerLink="/home">
+      <img src="assets/img/index_img/CitiIcon.png" style="float: left;height: 80px; margin-right: 20px">
+    </a>
+    <div class="collapse navbar-collapse" id="responsive-navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown" data-toggle="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+             aria-expanded="false" routerLink="/home">
+            LV首页
+            <!--<span class="caret"></span>-->
+          </a>
+          <!--<ul class="dropdown-menu">-->
+            <!--<li><a href="/home#p1">优秀产品</a></li>-->
+            <!--<li><a href="#">公司特色</a></li>-->
+            <!--<li><a href="#">投资流程</a></li>-->
+            <!--<li><a href="#">合作伙伴</a></li>-->
+          <!--</ul>-->
+        </li>
+        <li class="dropdown" data-toggle="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+             aria-expanded="false" routerLink="/fund">
+            FOF基金产品 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="fund/recommend">推荐产品</a></li>
+            <li><a routerLink="fund/product">LV绿色产业基金</a></li>
+            <li><a routerLink="fund/futureProduct">即将上线</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-toggle="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false" routerLink="/information">
+            资讯<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <!--<li><a routerLink="/information" routerLinkActive="active">FOF今日头条</a></li>-->
+            <li><a routerLink="information/fof">FOF资讯</a></li>
+            <li><a routerLink="information/ppp">PPP资讯</a></li>
+            <li><a routerLink="information/news">绿色产业基金资讯</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-toggle="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+             aria-expanded="false" routerLink="/course">
+            绿投基地<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="course/way">绿投走向</a></li>
+            <li><a routerLink="course/dangerEdu">风险教育</a></li>
+            <li><a routerLink="course/law">法律法规</a></li>
+            <li><a routerLink="course/wayforright">投资者维权</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-toggle="dropdown">
+          <a href="#" role="button" aria-haspopup="true" aria-expanded="false" routerLink="/tool">
+            基金工具
+          </a>
+        </li>
+        <li class="dropdown" data-toggle="dropdown">
+          <a href="#" role="button" aria-haspopup="true" aria-expanded="false" routerLink="/forum">
+            论坛
+          </a>
+
+        </li>
+      </ul>
+
+      <div class="profile navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <a data-toggle="modal" data-target="#login-modal">用户登录</a>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left form-horizontal" style="margin-top: 21px;">
+          <input placeholder="搜索…" class="form-control" type="text">
+          <button class="btn btn-primary">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<div id="login-modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+        <h1 class="text-center text-primary">登录</h1>
+      </div>
+      <div class="modal-body" style="height: 210px">
+        <form action="" class="form col-md-12 center-block">
+          <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="电子邮件">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control input-lg" placeholder="登录密码">
+          </div>
+          <div class="form-group">
+            <button data-dismiss="modal" class="btn btn-primary btn-lg btn-block" (click)="login()">立刻登录</button>
+            <!--<span><a href="#">找回密码</a></span>-->
+            <span><a data-dismiss="modal" routerLink="/enroll" class="pull-right" style="font-size: medium">没有账号？马上注册~</a></span>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background-color: #717171">
+  <div class="container" style="padding-bottom: 100px;padding-top: 50px">
+    <div class="row">
+      <div class="footerdiv">
+        <a routerLink="/forUser">使用条款</a>
+      </div>
+      <div class="footerdiv">
+        <a routerLink="/forPrivacy">隐私条款</a>
+      </div>
+      <div class="footerdiv">
+        <a routerLink="/forDanger">风险提示</a>
+      </div>
+      <div class="footerdiv">
+        <a routerLink="/forOurTeam">关于我们</a>
+      </div>
+    </div>
+    <div style="text-align: center;margin-top: 20px;font-size: medium;font-weight: 600">© 2017 LVFaith. All rights reserved.</div>
+  </div>
+</footer>
+
+
+
+

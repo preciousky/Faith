@@ -1,0 +1,48 @@
+.firstLine{
+  height: 300px;
+  width:500px;
+  border:3px solid rgba(61, 64, 168, 0.95);
+  box-shadow: 1px 1px 3px #888888;
+  border-radius: 4px;
+  margin: 10px;
+  padding:8px;
+  background-color: rgba(255, 255, 255, 0.51);
+}
+.secondLine{
+  width:1020px;
+  border:3px solid rgba(61, 64, 168, 0.95);
+  box-shadow: 1px 1px 3px #888888;
+  border-radius: 4px;
+  margin: 10px;
+  padding:8px;
+  background-color: rgba(255, 255, 255, 0.51);
+}
+li a{
+  background-color: #85a8e6;
+  font-size: larger;
+  font-weight: bolder;
+}
+li a.sub{
+  background-color: #85a8e6;
+  font-size: small;
+  font-weight: normal;
+}
+.mystate{
+  margin:10px;
+  text-align: left;
+  font-weight: bolder;
+}
+.mytitle{
+  background-image: url("./assets/img/home_img/title3.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  text-align: left;
+  padding-left: 90px;
+  padding-top: 1px;
+  font-size: x-large;
+  font-weight: bolder;
+  text-shadow: 1px 0px 2px #888888;
+  margin: 15px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}

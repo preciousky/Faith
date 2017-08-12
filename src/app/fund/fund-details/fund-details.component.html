@@ -1,0 +1,194 @@
+<div class="mytitle">基金产品详情</div>
+
+
+<div>
+  <div >
+    <div  class="firstLine" style="float:left;">
+    <div style="height: 42px;">
+      <!-- tab标签 -->
+      <ul  id="myTab1" class="nav nav-tabs" style="float: left">
+        <li class="active">
+          <a href="#11" data-toggle="tab">
+            实时估值
+          </a>
+        </li>
+        <li>
+          <a href="#12" data-toggle="tab">
+            重仓持股
+          </a>
+        </li>
+      </ul>
+      <div style="float:right">
+        <a data-toggle="modal" data-target="#login-modal" style="height: 38px;margin-top: 2px" class="btn btn-info">
+          历史净值
+        </a>
+      </div>
+    </div>
+      <!-- 每个tab页对应的内容 -->
+    <div id="myTabContent1" class="tab-content">
+        <div class="tab-pane fade in active" id="11">
+          <div class="mystate">
+            实时估值
+          </div>
+        </div>
+        <div class="tab-pane fade" id="12">
+          <div class="mystate">
+            重仓持股
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="firstLine" style="float: left; ">
+      <div style="text-align: left; height:150px">
+        <h3 style="margin-bottom: 20px;">
+          基金名称
+        </h3>
+        <p>
+          基金详情..............................................................
+        </p>
+        <p>
+          基金详情..............................................................
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-danger" routerLink="/fund/toBuy">
+          立即购买
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div style="color: transparent">__________________________________________________</div>
+
+  <div class="secondLine">
+    <!-- tab标签 -->
+    <ul id="myTab2" class="nav nav-tabs">
+      <li>
+        <a href="#21" data-toggle="tab">
+          基金档案
+        </a>
+      </li>
+
+      <li>
+        <a href="#22" data-toggle="tab">
+          概况
+        </a>
+      </li>
+
+      <li>
+        <a href="#23" data-toggle="tab">
+          费率
+        </a>
+      </li>
+
+      <li>
+        <a href="#24" data-toggle="tab">
+          财报
+        </a>
+      </li>
+    </ul>
+
+    <!-- 每个tab页对应的内容 -->
+    <div id="myTabContent2" class="tab-content" style="margin-top: 10px">
+
+      <div class="tab-pane fade in active" id="21">
+        <div class="mystate">
+          基金走势图
+        </div>
+        <div class="mystate">
+          基金涨幅
+        </div>
+        <div class="mystate">
+          资产配置
+        </div>
+        <div class="mystate">
+          行业配置
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="22">
+        <div class="mystate">
+          基金概况
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="23">
+        <div class="mystate">
+          认购相关费用
+        </div>
+        <div class="mystate">
+          申购相关费用
+        </div>
+        <div class="mystate">
+          赎回相关费用
+        </div>
+        <div class="mystate">
+          其他费用
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="24">
+        <!-- tab标签 -->
+        <ul id="myTab3" class="nav nav-tabs">
+          <li>
+            <a class="sub" href="#241" data-toggle="tab">
+              财务指标
+            </a>
+          </li>
+
+          <li>
+            <a class="sub" href="#242" data-toggle="tab">
+              资产和负债
+            </a>
+          </li>
+
+          <li>
+            <a class="sub" href="#243" data-toggle="tab">
+              利润分配
+            </a>
+          </li>
+        </ul>
+
+        <!-- 每个tab页对应的内容 -->
+        <div id="myTabContent3" class="tab-content">
+          <div class="tab-pane fade in active" id="241">
+            <div class="mystate">
+              财务指标
+            </div>
+          </div>
+          <div class="tab-pane fade" id="242">
+            <div class="mystate">
+              资产和负债
+            </div>
+          </div>
+          <div class="tab-pane fade" id="243">
+            <div class="mystate">
+              利润分配
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="login-modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+        <h1 class="text-center text-primary">历史净值</h1>
+      </div>
+      <div class="modal-body" style="height: 210px">
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>

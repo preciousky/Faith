@@ -1,0 +1,30 @@
+
+<div class="title">适用于计算基金的收益率</div>
+
+<div style="padding: 0px;">
+  <form class="bs-example bs-example-form" role="form">
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="投入本金" (input)="cal1($event.target.value)">
+      <span class="input-group-addon">元</span>
+    </div>
+    <br>
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="收回金额" (input)="cal2($event.target.value)">
+      <span class="input-group-addon">元</span>
+    </div>
+    <br>
+    <div class="input-group myinput">
+      <input type="text" class="form-control" placeholder="持有期限" (input)="cal3($event.target.value)">
+      <span class="input-group-addon">天</span>
+    </div>
+  </form>
+</div>
+
+<div style="width: 300px;
+margin-left: 100px;
+margin-top: 20px;"><button class="btn btn-danger" style="width:300px;text-align: center" (click)="cal()">计算</button></div>
+<div class="title">计算结果</div>
+<div style="margin-bottom: 20px">
+  <div class="result">这两个的计算公式有待核实——持有期总收益率:{{result1}}元</div>
+  <div class="result">持有期年化收益率:{{result2}}份</div>
+</div>
