@@ -1,5 +1,5 @@
 .mytitle{
-  background-image: url("./assets/img/home_img/title3.png");
+  background-image: url("/src/assets/img/home_img/title3.png");
   background-repeat: no-repeat;
   height: 60px;
   text-align: left;
@@ -121,7 +121,7 @@ a:hover{
 .steps{
   height: 130px;
   width:120px;
-  background-image: url("./assets/img/home_img/square.png");
+  background-image: url("/src/assets/img/home_img/square.png");
   padding-top: 47px;
   text-shadow: 1px 1px 1px rgba(90, 81, 81, 0.78);
   font-weight: 600;

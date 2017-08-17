@@ -33,7 +33,7 @@ li a.sub{
   font-weight: bolder;
 }
 .mytitle{
-  background-image: url("./assets/img/home_img/title3.png");
+  background-image: url("/src/assets/img/home_img/title3.png");
   background-repeat: no-repeat;
   height: 60px;
   text-align: left;
