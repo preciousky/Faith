@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   constructor( public router: Router , public http: Http) { }
   ngOnInit() {
     this.userID = -1;
+    this.username = 'XXX';
     $('li.dropdown').mouseover(function () {
       $(this).addClass('open');
     }).mouseout(function () {
@@ -55,6 +56,9 @@ export class AppComponent implements OnInit {
     // this.router.navigate(['/host', { id: userID}]);
   }
 
+  logout() {
+    this.userID = -1;
+  }
   // getData(event) {
   //   this.username = event['username'];
   //   this.userID = event['userID'];
