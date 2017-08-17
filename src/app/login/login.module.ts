@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IdentifyComponent } from './identify/identify.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { ActivateComponent } from './activate/activate.component';
+import {CommunicationService} from '../communication.service';
 const appRoutes: Routes = [
   { path: 'enroll', component: EnrollComponent },
   { path: 'identify', component: IdentifyComponent },

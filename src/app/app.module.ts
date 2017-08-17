@@ -18,6 +18,7 @@ import { ForUserComponent } from './for-user/for-user.component';
 import { ForPrivacyComponent } from './for-privacy/for-privacy.component';
 import { ForDangerComponent } from './for-danger/for-danger.component';
 import { ForOurTeamComponent } from './for-our-team/for-our-team.component';
+import {CommunicationService} from './communication.service';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent },
@@ -56,10 +57,10 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
   bootstrap: [AppComponent],
   exports: [
     RouterModule
-  ]
+  ],
+  providers: [ CommunicationService ]
 })
 export class AppModule { }
