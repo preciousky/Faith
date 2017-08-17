@@ -37,7 +37,7 @@ const appRoutes: Routes = [
     ForUserComponent,
     ForPrivacyComponent,
     ForDangerComponent,
-    ForOurTeamComponent,
+    ForOurTeamComponent
   ],
   imports: [
     BrowserModule,

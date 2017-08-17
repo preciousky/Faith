@@ -17,7 +17,7 @@ export class Cal1Component implements OnInit {
     this.result1 = 0;
     this.result2 = 0;
   }
-  cal1(val: number ) {
+  cal1(val: number) {
     this.val1 = val;
     this.result1 = 0;
     this.result2 = 0;
