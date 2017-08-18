@@ -34,13 +34,17 @@ export class EnrollComponent implements OnInit {
       // this.ComService.putData({ 'username': 'testusername', 'userID': '1' });
       const password_md5 = Md5.hashStr( this.psd1 ).toString();
       const body = JSON.stringify({
-        'username' : this.username,
+        'username' : this.username.toString(),
         'password' : password_md5
       });
-      this.http.post('api/enroll', body ).subscribe(data => {
-        if ( data['state'].toString() === 'success') {
-          alert(data['userID'].toString() + '用户注册成功');
-          this.ComService.putData({ 'username': this.username, 'userid': data['userID']});
+      console.log('request:');
+      console.log(body);
+      this.http.post('http://123.207.20.107:3000/enroll', body ).subscribe(data => {
+        console.log('response:');
+        console.log(data);
+        if ( data['code'].toString() === '1') {
+          alert(data['user']['user_id'].toString() + '用户注册成功');
+          this.ComService.putData({ 'username': this.username, 'user_id': data['user']['user_id']});
           this.router.navigate(['/host']);
         }else {
           alert('http成功，用户注册失败');

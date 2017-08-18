@@ -3,31 +3,31 @@
 <div class="form-horizontal">
   <span class="heading">用户实名验证</span>
   <div class="form-group">
-    <input type="email" class="form-control"  placeholder="身份证号码">
+    <input type="email" class="form-control"  placeholder="身份证号码" (input) = "id = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" placeholder="真实姓名">
+    <input type="email" class="form-control" placeholder="真实姓名" (input) = "realname = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control"  placeholder="联系地址">
+    <input type="password" class="form-control"  placeholder="联系地址" (input) = "address = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control"  placeholder="选择银行">
+    <input type="password" class="form-control"  placeholder="选择银行" (input) = "bank_name = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control" placeholder="银行卡号">
+    <input type="password" class="form-control" placeholder="银行卡号" (input) = "bankcard_no = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control"  placeholder="银行预留手机号">
+    <input type="email" class="form-control"  placeholder="银行预留手机号" (input) = "phone = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control"  placeholder="开户行所在地 ">
+    <input type="email" class="form-control"  placeholder="开户行所在地 " (input) = "account_area = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control"  placeholder="交易密码设置">
+    <input type="email" class="form-control"  placeholder="交易密码设置" (input) = "tcode = $event.target.value">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" placeholder="再输入一次交易密码">
+    <input type="email" class="form-control" placeholder="再输入一次交易密码" (input) = "re_tcode = $event.target.value">
   </div>
   <div class="form-group">
     <button type="submit" class="btn btn-default" routerLink="/host">确认提交进行实名认证</button>

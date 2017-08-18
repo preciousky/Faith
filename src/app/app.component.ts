@@ -24,17 +24,17 @@ export class AppComponent implements OnInit {
     }).mouseout(function () {
       $(this).removeClass('open');
     });
-    this.http.get('/').subscribe(data => {
-      if ( data['userID'] ) {
-        this.userID = data['userID'];
-        this.username = data['username'];
-      }
-    });
+    // this.http.get('/').subscribe(data => {
+    //   if ( data['userID'] ) {
+    //     this.userID = data['userID'];
+    //     this.username = data['username'];
+    //   }
+    // });
   }
   constructor( public router: Router , public http: Http, public ComService: CommunicationService) {
     this.ComService.data$.subscribe(data => {
       this.username = data['username'];
-      this.userID = data['userID'];
+      this.userID = data['user_id'];
     }, error => {
       console.log('error: ' + error);
     });
@@ -43,12 +43,16 @@ export class AppComponent implements OnInit {
     console.log('login!');
     const password_md5 = Md5.hashStr( this.password ).toString();
     const body = JSON.stringify({
-      'username' : this.username,
+      'username' : this.username.toString(),
       'password' : password_md5
     });
-    this.http.post('api/login', body ).subscribe(data => {
-      if (data['state'].toString() === 'success') {
-        alert(data['userID'].toString() + 'http成功，用户登陆成功');
+    console.log('request:');
+    console.log(body);
+    this.http.post('http://123.207.20.107:3000/login', body ).subscribe(data => {
+      console.log('response:');
+      console.log(data);
+      if (data['code'].toString() === '1') {
+        alert(data['user']['user_id'].toString() + 'http成功，用户登陆成功');
         this.router.navigate(['/host']);
       }else {
         alert('http成功，用户登陆失败');
